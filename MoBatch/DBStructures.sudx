@@ -1,0 +1,19 @@
+﻿<DBUpdate>
+  <command>
+    <comment />
+    <commandtext>
+      CREATE TABLE DatabaseProperties
+      (Name VARCHAR(50), Value VARCHAR(50))
+    </commandtext>
+  </command>
+
+  <command>
+    <comment />
+    <commandtext>
+      INSERT DatabaseProperties
+      VALUES
+      ('DBVersion', '0.0.0.0')
+    </commandtext>
+  </command>
+
+</DBUpdate>

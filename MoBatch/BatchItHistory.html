@@ -1,0 +1,1454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+  <head>
+    <title>
+      MoBatch Version History
+    </title>
+  </head>
+  <body bgcolor="#DDDDFF">
+    <center>
+      <h2>
+        MoBatch Version History
+      </h2>
+    </center><strong><u>Version 1.4.2.14 (28/04/2014)</u></strong>
+    <ul>
+      <li>Corrected bug preventing drop-down description from reflecting in group header most of the time.
+      </li>
+      <li>Provide ability to delete or save layout for docking, grid or both.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.13 (13/04/2014)</u></strong>
+    <ul>
+      <li>Reflect license expiry dates in Configure Batch Types screen.
+      </li>
+      <li>Provided CTRL-S to save grid (not in cell edit mode).
+      </li>
+      <li>Provided CTRL-F to open Search (Find) screen.
+      </li>
+      <li>Amended Search screen to default cursor within search value cell for quick entry.
+      </li>
+      <li>Amended Search screen to activate Search Button when ENTER key typed on entry to screen.
+      </li>
+      <li>Amended Search screen to activate Select Button when once user has performed a search that has returned values.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.12 (20/03/2014)</u></strong>
+    <ul>
+      <li>Cater for SQL Server BigInt datatype (max 9,223,372,036,854,775,807).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.11 (13/03/2014)</u></strong>
+    <ul>
+      <li>Corrected drop-downs to list items starting with typed value(s) instead of containing typed value(s).
+      </li>
+      <li>Corrected drop-downs to accept 1st item of drop-down list of values matching the typed value(s) when tabbing.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.10 (10/03/2014)</u></strong>
+    <ul>
+      <li>Corrected secondary issue preventing Display values from reflecting fully after initial open of Lines/Distribution level.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.9 (09/03/2014)</u></strong>
+    <ul>
+      <li>Upgraded all Telerik components to latest (Q1 2014).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.8 (01/03/2014)</u></strong>
+    <ul>
+      <li>Corrected where Display 4 would not reflect on Distribution Level.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.7 (19/11/2013)</u></strong>
+    <ul>
+      <li>Corrected incorrect date input format causing date to reflect in Gujarati.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.6 (15/11/2013)</u></strong>
+    <ul>
+      <li>Added password confirmation to MoBatch upgrade process.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.5 (06/08/2013)</u></strong>
+    <ul>
+      <li>Corrected issue preventing update &amp; delete database errors from reflecting to user.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.4 (23/07/2013)</u></strong>
+    <ul>
+      <li>Corrected bug preventing F4 from opening local folder if this is either in 1st column or 1st row.
+      </li>
+      <li>Removed dependency on troublesome Microsoft.Sqlserver.Types.dll.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.3 (07/07/2013)</u></strong>
+    <ul>
+      <li>When saving data grid changes, manage each row delete / insert / update independently, i.e. save (commit) where transaction is successful. Also reflect any errors against the relevant rows (exclamation left of row).
+      </li>
+      <li>Corrected default input date format in application settings to be dd-MMM-yy instead of invaid format DD/MM/YY.
+      </li>
+      <li>Corrected bug resulting in RowValidation stored procedures never triggering after moving off a new row being added.
+      </li>
+      <li>Corrected issue where (limited) access is not granted when running MoBatch in a brand new environment where access has not yet been configured.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.2 (24/4/2013)</u></strong>
+    <ul>
+      <li>Enhanced Search screen to enable searching on drop-down display values (text/description visible to the user and not just on the code that is stored in the database).
+      </li>
+      <li>Enhanced grid column filters to search on text/description on drop-down columns.
+      </li>
+      <li>After returning from CTRL-L, tab off the value that is returned (due to drop-down column where returned value not visible until tabbing off.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.1 (16/4/2013)</u></strong>
+    <ul>
+      <li>Provided ability for drop-down list column in grid to also be CTRL-L enabled (perfect for returning code for storing in table but reflecting description in cell. E.g. Return customer number but reflect customer name to user).
+      </li>
+      <li>Provided filtering functionality in grid.
+      </li>
+      <li>Corrected bugs causing errors in specific scenarios.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.2.0 (14/3/2013)</u></strong>
+    <ul>
+      <li>Total revamp of Access Management functionality (significant underlying changes including to database. Backup recommended before upgrading!).
+      </li>
+      <li>Closed the loop of users being able to edit read-only columns (or not be allowed to edit columns that are not read-only) when user has re-ordered the order in which columns appear in the grid.
+      </li>
+      <li>Corrected bug where cell validation SP might not trigger on 1st column of a new row being added.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.10 (20/3/2013)</u></strong>
+    <ul>
+      <li>Further correction to prevent error message "DataRead.GetFieldType(11) returned null" when using HierarchyID datatype columns.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.9 (19/3/2013)</u></strong>
+    <ul>
+      <li>Prevent error message "DataRead.GetFieldType(11) returned null" when using HierarchyID datatype columns (included reference Microsoft.SqlServer.Types.dll).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.8 (10/03/2013)</u></strong>
+    <ul>
+      <li>Prevent error message about missing stored procedure when opening Access Configuration Screen.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.7 (9/3/2013)</u></strong>
+    <ul>
+      <li>Enabled "autocomplete" functionality on Batch Screen Setup Table drop-down when a new batch type is being configured.
+      </li>
+      <li>Restored "autocomplete" functionality on drop-downs in batch grids (allow user to choose drop-down value by typing in first few characters of description).
+      </li>
+      <li>Made message more user-friendly when connection is lost with the database (informing user to have database/network administrator resolve issue and then just repeat action again).
+      </li>
+      <li>When saving new add row, position cursor on this new row after refreshing the screen (assumes last row in select is the latest one).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.6 (3/3/2013)</u></strong>
+    <ul>
+      <li>Prevent error caused by field occurring twice in update SQL when saving on line/distribution level and headerID parameter not preceded with mbconstant_ in Update Override SQL.
+      </li>
+      <li>Enhanced Configuring Batch Types to sort on Batch Category, then Sequence and then Batch Type (ascending sequence).
+      </li>
+      <li>Enhanced Batch Grid to ensure that active row is always visible after save.
+      </li>
+      <li>Corrected Batch Grid so Escape key undoes a new row being added (remove new row details).
+      </li>
+      <li>Modified Batch Grid so that drop-down columns are sorted by the value displayed to the user rather than the underlying code.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.5 (19/2/2013)</u></strong>
+    <ul>
+      <li>Batch Screen Setup - amended table drop-down to list tables with table name followed by schema to make it easier for users to search.
+      </li>
+      <li>Show waiting cursor immediately when closing child level so that user knows action is in process where lag caused due to parent level containing many entries.
+      </li>
+      <li>Resolved issue with error when deleting more than 1 row at a time.
+      </li>
+      <li>Batch Screen Setup - Ensure that new columns added to source table are saved to MoBatch.BI_Columns whenever user saves in the Batch Screen Setup.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.4 (17/2/1013)</u></strong>
+    <ul>
+      <li>Correct issue with not positioning back to last active row after saving.
+      </li>
+      <li>Disable right-click action buttons that apply to specific status and any of selected rows do not comply.
+      </li>
+      <li>Provide debug information to attempt to resolve occasional error on save.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.3</u></strong>
+    <ul>
+      <li>Cater for HierarchyId datatypes in batch process tables.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.2</u></strong>
+    <ul>
+      <li>New facility F4 opens local folder in Windows Explorer or local file in whatever application is assigned in Windows according to the file's extension.
+      </li>
+      <li>Corrected issue with autosave where error would not show (or eternal loop of error).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.1</u></strong>
+    <ul>
+      <li>Corrected message box title to say "Error" rather than "Warning" for error messages returned by SP's.
+      </li>
+      <li>Adjusted command bar button separator to be thinner to avoid confusion.
+      </li>
+      <li>Corrected saving of Batch Screen Setup &gt; Special Function Buttons to ensure that given sequence of buttons is retained.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.1.0</u></strong>
+    <ul>
+      <li>Converted radStripTab to radCommandBar and upgraded to Telerik 2012 Q2.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.0.5</u></strong>
+    <ul>
+      <li>Prevent error occurring when using CTRL-C to copy from a cell in a new row still being added.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.0.4</u></strong>
+    <ul>
+      <li>Prevent error occurring where new row is added &amp; moves to end of grid, and user then right-clicks on this new row before saving.
+      </li>
+      <li>Provided ability to Export grids to CSV format as well as provided warning if export to xls/xlsx format as this is inefficient, faulty and about to be obsolete.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.0.3</u></strong>
+    <ul>
+      <li>Provided new functionality enabling readonly control of columns.
+      </li>
+      <li>Corrected issue where Special_IsChangedCell would indicate that change made despite no modification by user (when empty grid and ready to add new row).
+      </li>
+      <li>Corrected bug in Batch Screen Setup &gt; Grid Columns where changes to NullValue would not take effect.
+      </li>
+      <li>Modified installer to include TelerikData.dll to enable exporting to Excel.
+      </li>
+      <li>Amended further issue where RowSetup would not always work 100% (open by double-clicking in parent).
+      </li>
+      <li>Validate Time datatype columns to avoid errors caused by invalid values when saving.
+      </li>
+      <li>Prevent right-click options "Clear Value" and "Delete Row" if row is readonly.
+      </li>
+      <li>Position cursor on the entry that was last added after saving newly added rows.
+      </li>
+      <li>Auto-suppress refreshing of grid if error messages returned for specific rows (GridErrorMsg).
+      </li>
+      <li>If GridErrorMsg returned without associating to a specific row (Return_HeaderID) then display as normal general error message instead of discarding it.
+      </li>
+      <li>On Batch Screen Setup, restored option to Auto-drill to lowest possible descendent level (went missing with changes).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.0.2</u></strong>
+    <ul>
+      <li>More corrections where AfterValidation would not always work 100%.
+      </li>
+      <li>Enable save when deleting special function button.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.0.1</u></strong>
+    <ul>
+      <li>Amended further issue where AfterValidation would not always work 100% (e.g. Return_Allow_Grid_Modify, Return_Allow_Grid_Add and Return_Allow_Grid_Delete).
+      </li>
+      <li>Corrected Batch Screen Setup where Table drop-down, Qualifier and Tab Title extended in size beyond the right edge preventing one from changing table.
+      </li>
+      <li>Corrected issue with possible error when passing numeric/date fields that have formatting specified to stored procedures.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.4.0.0</u></strong>
+    <ul>
+      <li>Amended issue where AfterValidation and RowSetup would not always work 100% (e.g. if make cell readonly in AfterValidate then not working in line level when opening a different header).
+      </li>
+      <li>Amended to use the date separator specified in the application setting DateInputFormat rather than the separator used in the machines regional settings.
+      </li>
+      <li>Corrected issue preventing user from capturing year when typing in a date instead of selecting from a calendar.
+      </li>
+      <li>Corrected bug where details from the wrong row might be passed to the Lookup screen when using CTRL-L.
+      </li>
+      <li>Sort report categories and reports in specified sequence order in menu list.
+      </li>
+      <li>Make use of later version of Telerik controls (Significant changes as converted RadListBox, RadComboBox, RadTabStrip and RadToolStrip to RadListControl, RadDropDownList and RadPageView).
+      </li>
+      <li>Provide ability to remove batch levels in Batch Screen Setup (and entire batch type when removing header level).
+      </li>
+      <li>Amendments to prevent "Object Reference not set to an instance of an object" error that occurs on occasion.
+      </li>
+      <li>Delete all access assigned to role when deleting a role.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.19</u></strong>
+    <ul>
+      <li>Provide ability to control input format when capturing dates. Controlled by value of DateInputFormat in Application Settings. Default format is DD/MM/YY.
+      </li>
+      <li>Prevent error if user types CTRL-L on a header row.
+      </li>
+      <li>Corrected issue preventing stored procedure from returning value into current cell.
+      </li>
+      <li>Updated MoBatch Developer Guide on how to control whether able to add, update or delete within grid.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.18</u></strong>
+    <ul>
+      <li>Provide ability to override Required columns (Not-null columns will still default to Required in Batch Screen Setup Screen for new batch).
+      </li>
+      <li>Modified to use mht documents which are easier to maintain (can use MS Word) rather than chm documents.
+      </li>
+      <li>Changed back to 1 second delay between keys typed in drop-down before auto-completion considers key entry to be for new search, else not auto-completing quick enough.
+      </li>
+      <li>Use latest DAL without transaction handling allowing transaction handling in SP instead.
+      </li>
+      <li>Convert all obsolete radComboBoxes to radDropDownLists (for eventual later release of Telerik).
+      </li>
+      <li>Convert all obsolete column.UniqueName properties to column.Name (for eventual later release of Telerik).
+      </li>
+      <li>Default Excel export extension to xml.
+      </li>
+      <li>Amended MoBatch Configuration Selection (on startup to select database) to type "C" for configurations starting with this letter (previously would cancel).
+      </li>
+      <li>Corrected issued preventing conditional formatting (but no longer able to have different backgrounds for alternative roles).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.17</u></strong>
+    <ul>
+      <li>Provide Search tooltip when hovering over Search menu icon.
+      </li>
+      <li>Amended to enable hard-coded parameters to be specified in Default Procedure.
+      </li>
+      <li>Corrected bug resulting in "Index was out of range" error when attempting to delete a new entry added to a grid before saving.
+      </li>
+      <li>Batch Screen Setup - Eliminated need for parent keys to be preceded with mbconstant_ in Override insert/update.
+      </li>
+      <li>Batch Screen Setup - Eliminated need for primary key to be set to 0 in Override insert. May now be usual @.
+      </li>
+      <li>Modified the drop-down lists in Batch Screen Setup to enable the use of the Mouse Wheel.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.16</u></strong>
+    <ul>
+      <li>Ensure that focus placed on new child level when opened.
+      </li>
+      <li>Corrected bug where 1st row within 1st group not opened by default.
+      </li>
+      <li>Improved opening batch type from other applications.
+      </li>
+      <li>Corrected issue where cell/row background colour not working on new row being added.
+      </li>
+      <li>Ensure all cell/row background colours cleared when refreshing.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.15</u></strong>
+    <ul>
+      <li>Ensure focus is on 1st row in 1st group when opening grouped batch process/level.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.14</u></strong>
+    <ul>
+      <li>Corrected bug where user would tab out of cell after selecting value from drop-down, and value would disappear.
+      </li>
+      <li>Ensure drop-downs of available table names are sorted alphabetically (E.g. Batch Screen Setup &gt; Options Tab &gt; Table drop-down).
+      </li>
+      <li>Allow for 3 second delay between keys typed in drop-down before auto-completion considers key entry to be for new search.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.13</u></strong>
+    <ul>
+      <li>When validating datatype captured in cell (numeric etc.), allow for empty cells.
+      </li>
+      <li>Corrected small bug in tabbing over read-only columns to tab to last column (not 2nd last column) if remainder read-only.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.12</u></strong>
+    <ul>
+      <li>Corrected bug in validation of date + datetime datatypes.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.11</u></strong>
+    <ul>
+      <li>Ignore attempts to open child when new row being entered (parent does not yet exist resulting in error message).
+      </li>
+      <li>Validate datatype of value captured into cells and provide user-friendly message (would previously abort application run).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.10</u></strong>
+    <ul>
+      <li>Corrected issue resulting in error occurring if user selects (using CTRL-L) an entry containing empty key.
+      </li>
+      <li>Corrected bugs found with new functionality that tabs over read-only columns.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.9</u></strong>
+    <ul>
+      <li>Amended to skip read-only columns when tabbing through cells (except if all columns are read-only).
+      </li>
+      <li>Increased size of selection box for drop-down cells – increased height (according to number of entries in list) and width (minimum width for narrower cells)..
+      </li>
+      <li>After saving, ensure that the last row worked on remains the active one when using grouping.
+      </li>
+      <li>Corrected bug where wrong row may potentially be processed by SP events when using grouping.
+      </li>
+      <li>Corrected issue preventing dates from being typed into date cells in batch grids (could only select from calendar).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.8</u></strong>
+    <ul>
+      <li>Amended platform target to x86 rather than "Any CPU" to force WebBrowser to x86 Internet Explorer which caters for Silverlight.
+      </li>
+      <li>Added Developers Guide to Help menu items. Also amended all configuration screens to call the developers guide when Help button clicked.
+      </li>
+      <li>Added directions to configuring Web (URL) Report with parameters to developers guide.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.7</u></strong>
+    <ul>
+      <li>Corrected bug where required attribute not returned correctly for columns (unless required in database).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.6</u></strong>
+    <ul>
+      <li>Cater for 0 in column name (would cause error "Must declare the scalar variable").
+      </li>
+      <li>Cater for key column being used in Override Insert (would cause error "Must declare the scalar variable". Key column identity increment so would not be updated but for ease might want override insert to mirror update).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.5</u></strong>
+    <ul>
+      <li>Enabled save button to be pressed when capturing new entry without having to move to different row.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.4</u></strong>
+    <ul>
+      <li>Corrected bug with eternal loop as soon as any error occurs when saving.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.3</u></strong>
+    <ul>
+      <li>Enable column to be defined in grid configuration as local file or local folder.
+      </li>
+      <li>Provide ability to navigate files and folders using CTRL-L if column is local file/folder.
+      </li>
+      <li>Fixed issues with CTRL-L (where does not brig up lookup screen or where lookup screen invoked multiple times).
+      </li>
+      <li>Fixed bug where header background colours would sometimes be wrong.
+      </li>
+      <li>Fix issue where current value in drop-down dependent on other cell is incorrect and user selects 1st item in drop-down list and no change.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.2</u></strong>
+    <ul>
+      <li>Amended to allow value selected from CTRL-L lookup to be returned into cell that has drop-down.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.1</u></strong>
+    <ul>
+      <li>Corrected bug causing column width saved to layout from being applied (child levels).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.1.0</u></strong>
+    <ul>
+      <li>Cater for larger Tab Title (100 characters rather than 30).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.0.9</u></strong>
+    <ul>
+      <li>Enable user to specify Tab Title against batch process/level within Batch Screen Setup.
+      </li>
+      <li>Corrected bug on VARCHAR(MAX) columns causing invalid MaxLength = -1.
+      </li>
+      <li>Amended Filter function to cater for column names with spaces.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.0.8</u></strong>
+    <ul>
+      <li>Provide new status bar at top populated by SP returned column StatusBarMsg (like ErrorMsg etc).
+      </li>
+      <li>Provide SP action RefreshGrid (replaced ResetRow whichnever worked) to instruct grid to be refreshed.
+      </li>
+      <li>Amended a_sp_BI_Script_BatchType to include filters (and cater for sites where BI_Columns.ColumnID created).
+      </li>
+      <li>Amended a_sp_BI_Document_Summary to cater for new changes like override and row validation.
+      </li>
+      <li>New developer SP a_sp_Provide_Merge to create merge statement for table.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.0.7</u></strong>
+    <ul>
+      <li>Added functionality to export to a *.xls/*.xlsx workbook.
+      </li>
+      <li>Amended MoBatch SP's to cater for collation differing between sys objects &amp; MoBatch objects.
+      </li>
+      <li>Corrected bug where wrong cell information passed as parameters to action button SP when grouping is used.
+      </li>
+      <li>Corrected bug causing error “...Unable to cast object of type System.Int32 to type System.String..." in AfterLoad.
+      </li>
+      <li>Corrected bug causing error when more than 9 .ini files in INI folder.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.0.3</u></strong>
+    <ul>
+      <li>Added facility to execute a batch save, process, approve, calculate or validation from the SP results.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.0.2</u></strong>
+    <ul>
+      <li>Corrected bug with drop-downs that are dependent on other cell values.
+      </li>
+      <li>Corrected bug causing error when no rows are selected into the row.
+      </li>
+      <li>Cater for column names with spaces (surround with square brackets).
+      </li>
+      <li>Corrected bug perventing cell validation.
+      </li>
+      <li>Corrected bug where action button process would only execute when user selects Cancel rather than Ok when prompted to confirm run.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.3.0.0</u></strong>
+    <ul>
+      <li>Updated Telerik dependencies.
+      </li>
+      <li>Fixed paste bug in grid.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.54.0</u></strong>
+    <ul>
+      <li>User Configuration - Renamed SP from a_sp_BI_Replace_BatchType_Config to a_sp_BI_Script_BatchType for clarity.
+      </li>
+      <li>User Configuration - Amended a_sp_BI_Script_BatchType to also ensure that new batch process is added to Access.
+      </li>
+      <li>User Configuration - Amended a_sp_BI_Script_BatchType to grant access for new batch type to administrator.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.53.0</u></strong>
+    <ul>
+      <li>Batch grid - Corrected infinite repetition of non-numeric value error message if user captures non-numeric value into numeric cell and tries to close form.
+      </li>
+      <li>Batch grid - Resolve issue where user cannot just type into cell after tabbing over readonly cell.
+      </li>
+      <li>Batch grid - Enabled copying value from cell.
+      </li>
+      <li>Batch Screen Setup - Provided development help file when clicking on help button.
+      </li>
+      <li>Batch grid - Display GridErrorMsg as normal message if against row being added (instead of ignoring) as ErrorText not possible on this row.
+      </li>
+      <li>Batch grid - Cater for the new RowValidation stored procedure event.
+      </li>
+      <li>Configuration - Cater for new RowValidation stored procedure event (can be used for validation dependant on multiple cells etc).
+      </li>
+      <li>User Configuration - Provide ability to capture Email address and phone number against users, and Email selected users on right-click.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.52.0</u></strong>
+    <ul>
+      <li>Sp to resequence batch types alphabetically.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.51.0</u></strong>
+    <ul>
+      <li>NOTE! Removed ability to use columns designated as header ID/line Id as SP parameters to pass header Id/Line Id from parent level to SP. These columns will now be treated as all other columns. Must rather use Special_HeaderId/Special_LineId.
+      </li>
+      <li>Batch grid - Enhanced grouping to reflect number of entries within group.
+      </li>
+      <li>Batch grid - Corrected issue where grouping value lost after refreshing.
+      </li>
+      <li>Batch grid - Corrected issue where AfterSave stored procedures would sometimes not be executed.
+      </li>
+      <li>Batch grid - Cater for the new BeforeSave stored procedure event.
+      </li>
+      <li>Batch grid - Corrected issue calling search screen using CTRL-F.
+      </li>
+      <li>Batch grid - Provided better error handling when calling up Lookup Screen (CTRL-L) with invalid parameters.
+      </li>
+      <li>Configuration - New app setting to indicate whether to default search screen to column that user on or to 'All'.
+      </li>
+      <li>Configuration - Cater for new BeforeSave stored procedure event (can be used for pre-save validation etc).
+      </li>
+      <li>Filter - Cater for filtering where field IS NULL or IS NOT NULL.
+      </li>
+      <li>Batch grid - Reports load as Batch Only or Application Only, and only load for the correct batch type and level.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.50.0</u></strong>
+    <ul>
+      <li>Configure Users - Provide facility to auto add/drop login access to SQL Server, user to database and role access for added/deleted users.
+      </li>
+      <li>Batch grid - auto-size columns after capturing values in cells, or returning values into cells from a stored procedure.
+      </li>
+      <li>Batch grid - Corrected bug allowing users to capture data into read-only cells.
+      </li>
+      <li>Ctrl-L Lookup - Improvements such as catering for maximize screen, default position in search grid, cater for multiple cols with autosize, press enter to search etc).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.49.0</u></strong>
+    <ul>
+      <li>Batch grid - Improved performance on certain drop-down cells (where these are dependent on other cell values).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.48.0</u></strong>
+    <ul>
+      <li>Batch grid - Corrected bug causing 'Cross-thread operation not valid' error.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.47.0</u></strong>
+    <ul>
+      <li>Configuration - Corrected bug when moving from one batch type or level to another where same table used, columns screen is not updated according to new batch type/level.
+      </li>
+      <li>Configuration - Increment column sequence by steps of 10 (10, 20, 30...) to more easily re-sequence columns where necessary.
+      </li>
+      <li>Configuration - Cater for validation of a_sp_BI_Options_Select.
+      </li>
+      <li>Application Setting Config - Fix bug causing error when opening group &amp; show grouped columns.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.46.0</u></strong>
+    <ul>
+      <li>Batch filter - Reflect filter being used when hovering mouse over filter button.
+      </li>
+      <li>Batch grid - Cater for additional data types for action button stored procedure parameters: bigint, tinyint, bit, decimal, smallmoney, float, real, datetimeoffset, datetime2, smalldatetime, time, char, text, nchar, nvarchar, ntext.
+      </li>
+      <li>Batch grid - Fixed issue where a grid should be locked due to AfterLoad stored procedure controlling this, but when returning from child level the grid is no longer locked.
+      </li>
+      <li>Batch grid - Resolve error message occurring sometimes when rowsetup event used on parent level after child level is closed.
+      </li>
+      <li>Batch grid - Cater for row-level locking (instead of batch type or batch header locking) where one of columns is specified as ChangeTimeStamp column.
+      </li>
+      <li>Configuration - Added new column attribute to indicate that field contains the last Change Time Stamp. Selecting this disables locking on batch type or batch header and implements row locking instead.
+      </li>
+      <li>Configuration - Hidden 'Filter On' column attribute to avoid confusion as this is not used at present.
+      </li>
+      <li>Configuration - Parameters that have a non-alphanumeric and non-'_' character now get replaced with a hex representation of the character.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.45.0</u></strong>
+    <ul>
+      <li>Reports - allowed parameterisation of shell reports.
+      </li>
+      <li>General - Corrected issue with validating number of parameters against stored procedures in the MoBatch schema.
+      </li>
+      <li>Configuration - Allow user to determine sequence that action buttons appear in.
+      </li>
+      <li>Configuration - Re-asign sequence numbers to columns and action buttons to ensure that sequence numbers are unique (not duplicated) when saving.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.44.0</u></strong>
+    <ul>
+      <li>Moved relevant stored procedures tools to new MoBatchDev schema.
+      </li>
+      <li>Configuration - new application setting to suppress Old Batch Grid from menu.
+      </li>
+      <li>Configuration - Configure Screen Setup: Made alignment a drop-down.
+      </li>
+      <li>Configuration - Configure Screen Setup: Corrected so no longer necessary to restart MoBatch after modifying stored procedures in configuration.
+      </li>
+      <li>Filter - Enable double-clicking on filter in upper grid to use filter.
+      </li>
+      <li>Batch grid - Corrected bug causing RowSetup SP to not always operate on correct (current) row.
+      </li>
+      <li>Batch grid - Enable CTRL-F to activate search screen and default to search on current column.
+      </li>
+      <li>Batch grid - Fixed app crash when cancelling adding a new row.
+      </li>
+      <li>Batch grid - Fixed Combo Boxes - where a value is null, the correct text is displayed.
+      </li>
+      <li>Batch grid - Resolved where process sometimes terminated with error when validating.
+      </li>
+      <li>Batch grid - Resolved where sometimes able to save despite validation error.
+      </li>
+      <li>Batch grid - Better handling when problem caused by loading saved layout.
+      </li>
+      <li>Batch grid - Resolved issue causing action button to not be available in right-click when named "Calculate", "Process", "Validate" or "Approve".
+      </li>
+      <li>Batch grid - Corrected handling of error messages and grid error messages (previously not always setting &amp; clearing properly).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.43.0</u></strong>
+    <ul>
+      <li>Batch grid - Enable CTRL-L when editing numeric cells.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.42.0</u></strong>
+    <ul>
+      <li>Batch grid - Corrected issue where grid row errors would not be cleared.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.41.0</u></strong>
+    <ul>
+      <li>Batch grid - Corrected issue where when opening a combobox that required the row id to be passed to the procedure would cause an error.
+      </li>
+      <li>Batch grid - Added functionality to raise an error message to the user from a save procedure.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.40.0</u></strong>
+    <ul>
+      <li>Engine - allowed batch types to reference tables &amp; views across multiple schemas
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.39.0</u></strong>
+    <ul>
+      <li>Batch grid - Corrected to not allow deleting rows that are read-only.
+      </li>
+      <li>Batch grid - Corrected grid report not being shown.
+      </li>
+      <li>Search - Added an open button to the results grid context menu.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.38.0</u></strong>
+    <ul>
+      <li>Batch grid - Corrected to not allow save as long as errors exist against row.
+      </li>
+      <li>Configuration - Configure Screen Setup: Added ability to prevent adding, updating and deleting of batch type/level.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.37.0</u></strong>
+    <ul>
+      <li>Batch grid - Corrected bug where other cell values not passed correctly as parameters when executing after close event.
+      </li>
+      <li>Configuration - Configure Screen Setup: Added scrollbars to Override Insert/Update/Delete boxes.
+      </li>
+      <li>Configuration - Configure Screen Setup: Added scrollbars to Override Insert/Update/Delete boxes.
+      </li>
+      <li>Database Configuration Tool - Added store procedure a_sp_BI_Rename_BatchType to enable renaming of batches.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.36.0</u></strong>
+    <ul>
+      <li>Configuration + Batch grid - Cater for fixed-value stored procedure parameters containing spaces (e.g. 'Control Type').
+      </li>
+      <li>Configuration - Corrected issues causing lingering data when deleting batches (BI_Columns + BI_Buttons).
+      </li>
+      <li>Configuration - Corrected issues causing lingering data (and subsequent errors in batch grid) when changing table (BI_Columns).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.35.0</u></strong>
+    <ul>
+      <li>Configuration - Adjustments to Batch Screen Setup grid headers to improve readability.
+      </li>
+      <li>Batch grid - Corrected recently introduced bug preventing updating within child levels (header column does not have value).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.34.0</u></strong>
+    <ul>
+      <li>Database - Provided new development tool stored procedure [MoBatch].[a_sp_GrantRolePermissions_MoBatch] to assign moBatch access to a specified role.
+      </li>
+      <li>Configuration - Redesigned Configure Screen Setup.
+      </li>
+      <li>Configuration - Correct issue causing error when trying to delete reports.
+      </li>
+      <li>General - Cater for key words and spaces in parameters when updating data.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.33.0</u></strong>
+    <ul>
+      <li>Batch grid - Can begin editing a value by starting to type, as well as pressing F2 or clicking into the cell.
+      </li>
+      <li>Batch reports - resolved multithreaded report issue on grid refresh.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.32.0</u></strong>
+    <ul>
+      <li>Batch grid - Corrected bug causing hanging when user captures into cell that is validated, and then closes window before moving off cell.
+      </li>
+      <li>Batch grid - Corrected bug preventing cell values being returned from stored procedures into some rows (where row index being worked on is higher than number of columns).
+      </li>
+      <li>Database - Provided new development tool stored procedure a_sp_BI_Document_Summary that outputs to results a summary of the Mobatch configuration implemented within the current database (i.e. all customization done).
+      </li>
+      <li>Configuration - Enabled batch types to be created against views.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.31.0</u></strong>
+    <ul>
+      <li>Batch Screen Configuration - Added ability to specify stored procedure to be used for supervisor access per batch type/level.
+      </li>
+      <li>Batch grid - Provide new right-click ability for Supervisor Override which when invoked prompts for access code and sends this to the SP specified for this. SP can then validate password and perform required action.
+      </li>
+      <li>Batch grid - Corrected where stored procedures could not control readonly against cells that are in columns that are marked as readonly.
+      </li>
+      <li>Batch grid - Enabled users to type into datetime cells.
+      </li>
+      <li>Batch grid + Configuration - Provided new application configuration setting allowing the choice of adding new rows at the top or the bottom of a batch grid.
+      </li>
+      <li>Batch grid + When parsing parameters to SP, cater for parameters where name starts with Special_InputBox_, where everything after this in name is prompted as input. E.g. Special_InputBox_Action_To_Take to prompt for "Action To Take" (underscore replaced with space). If name contains text password then whatever user sees input values as asterisks (hidden). E.g. Special_InputBox_User_Password.
+      </li>
+      <li>Batch grid + Include grouped columns in grid enabling users to capture new rows and specify the grouped cell values, and also edit grouped cell values for existing rows.
+      </li>
+      <li>Batch grid - Resolve issue with error when user clicks within Add Row and then closing level without actually editing cell values.
+      </li>
+      <li>Database - Provided new development tool stored procedure that can be used to automatically update the BI_Columns table with new columns added to tables referenced by batch types.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.30.0</u></strong>
+    <ul>
+      <li>Batch grid - Hope to have fixed very intermittent issue where user captures value into cell but value disappears when moving out of cell.
+      </li>
+      <li>Batch grid - Fixed issue where comboboxes with dependencies on other cell values are empty after refreshing the grid (E.g. after calculate etc).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.29.0</u></strong>
+    <ul>
+      <li>Batch grid - Fixed a bug where the report wouldn't open correctly when no initial row was set for the application.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.28.0</u></strong>
+    <ul>
+      <li>Batch grid + Configuration - Completed new functionality allowing users to define buttons to perform process against all rows in batch type/level grid (and right-click capability against selected rows). Configured in Batch Screen Setup.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.27.0</u></strong>
+    <ul>
+      <li>Batch Screen Setup - Partially provided functionality to define buttons against batch types/levels.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.26.0</u></strong>
+    <ul>
+      <li>Batch grid - Provided Help facility when clicking on Help button.
+      </li>
+      <li>Configuration - Added new AppSettings StandardHelpFile to contain current standard help document. Not to be amended.
+      </li>
+      <li>Configuration - Added new AppSettings CustomHelpFile to contain current standard help document. Should be amended to contain correct custom help document file if applicable. NOTE THAT THIS REPLACES THE CONFIG 'CustomHelpFile' SETTING WHICH IS NOW OBSOLETE!.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.25.0</u></strong>
+    <ul>
+      <li>Batch grid - Corrected issue where batch entries are not unlocked properly when opening a different child entry.
+      </li>
+      <li>Batch grid - Corrected handling of access verification in child levels.
+      </li>
+      <li>Batch grid - right-click provides option to open descendent.
+      </li>
+      <li>Batch grid - pin (freeze) column behaviour now more resembles excel's freeze pane behavior.
+      </li>
+      <li>Batch grid - Report grid now bestfits if no template available.
+      </li>
+      <li>Batch grid - columns autosize on degrouping.
+      </li>
+      <li>Old batch grid - Fixed bug in old batch grid causing dataconversion (string to integer) error with some batches.
+      </li>
+      <li>Access Maintenance - Used better theme (for look).
+      </li>
+      <li>Access Maintenance - Removed filter facility as this was causing confusion.
+      </li>
+      <li>Access Maintenance - Corrected issue where new rows being created with empty values if user clicks in add new row and then moves to another row.
+      </li>
+      <li>General - Improved memory usage.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.23.0</u></strong>
+    <ul>
+      <li>New method of creating MoBatch application configurations - ExternalAppSettings will scan an entire directory for configurations.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.22.0</u></strong>
+    <ul>
+      <li>Cater for issue where cells passed as SP parameters but contain DBNull.
+      </li>
+      <li>Resolved issue with Recording SP Parameter information - where SP names were longer than 50 characters.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.21.0</u></strong>
+    <ul>
+      <li>Initial row is being set correctly on batch load.
+      </li>
+      <li>Web &amp; Grid reports refreshing correctly with initial row.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.20.0</u></strong>
+    <ul>
+      <li>Corrected issue causing error when closing child forms under specific circumstances (error introduced in 1.1.19).
+      </li>
+      <li>Resolved a cell validation error on new rows.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.19.0</u></strong>
+    <ul>
+      <li>Resolved an issue where refreshing a dataset would cause the comboboxes to lose their dropdown values.
+      </li>
+      <li>Resolved an issue when running process operations that would result in column attributes not being reloaded correctly.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.18.0</u></strong>
+    <ul>
+      <li>Resolved a performance issue where a batch data set would be loaded twice when opening a line or distribution from the Generic Search
+      </li>
+      <li>Removed spin-edit editors on numeric fields in favour of text boxes for manual input.
+      </li>
+      <li>Columns that accept a numeric input have their headers displayed in yellow.
+      </li>
+      <li>Resolved issue where a column would be read from after it had been removed from a grid when closing the form.
+      </li>
+      <li>Modified behaviour of comboboxes so that they retain the value that was selected when the combobox was opened.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.17.0</u></strong>
+    <ul>
+      <li>Modified behaviour of comboboxes so that they retain the value that was selected when the combobox was opened.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.16.0</u></strong>
+    <ul>
+      <li>Updated to Telerik's 2009 Q3 SP1 control set.
+      </li>
+      <li>Resolved issue where tabbing through combo boxes would cause the selection to skip over two columns, not just one.
+      </li>
+      <li>Added, Edited and Deleted row counts refresh when the user moves current rows, to keep an accurate count.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.15.0</u></strong>
+    <ul>
+      <li>Added a refresh button to grid reports in the new MoBatch grid.
+      </li>
+      <li>Fixed a bug where column headers would take on the incorrect colours after being reordered.
+      </li>
+      <li>Made comboboxes case-insensitive and type-insensitive to their lookup values.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.14.0</u></strong>
+    <ul>
+      <li>Resolved issue where a user would have an authorization error if both the Old Batch Grid and Configuration accesses were disabled, even if they had access to the new MoBatch grid.
+      </li>
+      <li>When a user enters a date field with no value, instead of defaulting to today's date, it now remains blank until a value is specified.
+      </li>
+      <li>Added thread-safety checks on the grid report viewer to fix an intermittent error.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.13.0</u></strong>
+    <ul>
+      <li>Resolved issue where user double-clicks on different parent item whilst child levels open, and the grid re-populates according to new parent selection but comboboxes are left empty and user cannot select items from drop-down (selected value disappears when tabbing out of cell).
+      </li>
+      <li>Resolved issue where cell defaults to date but this disappears when user tabs out of cell.
+      </li>
+      <li>Resolved issue where deleting a row and then recreating a new row with the same key fields or indexed fields would cause a duplication error.
+      </li>
+      <li>Updated to include the latest data access library (DAL v1.2.2).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.12.0</u></strong>
+    <ul>
+      <li>Handling cell validation SQL errors safely.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.11.0</u></strong>
+    <ul>
+      <li>Set up safeguards against opening a batch with an invalid configuration in the new MoBatch grid.
+      </li>
+      <li>Automatically opening the first group of rows in a grouped result set after a refresh in the new MoBatch grid.
+      </li>
+      <li>Improved performance in loading of a new batch.
+      </li>
+      <li>Corrected issue where the MoBatch application would not close cleanly direcly after closing a grid.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.10.0</u></strong>
+    <ul>
+      <li>Corrected bug in new MoBatch Grid where validation would occur on a row that had no data-bound item.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.9.0</u></strong>
+    <ul>
+      <li>Corrected bug in new MoBatch Grid where if a row was still in add-new state it would be lost on save.
+      </li>
+      <li>Changed colour schme of alternating row colours and seleted rows.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.8.0</u></strong>
+    <ul>
+      <li>Corrected resizing of release locks grid.
+      </li>
+      <li>Corrected bug in new MoBatch grid with license checks (caused by case-sensitivity)
+      </li>
+      <li>Corrected bug in new MoBatch grid with insert of new row when key fields are not Identity increment (would give error saying cannot be null).
+      </li>
+      <li>Corrected bug in new MoBatch grid with CTRL-L Lookup giving Null Reference Exception when returning values.
+      </li>
+      <li>Corrected MoBatch where CTRL-L would give error if cell values to be passed as parameters and user capturing new row where these are still empty.
+      </li>
+      <li>Corrected MoBatch editing of existing filters to not give error if roles and/or users assigned that no longer exist.
+      </li>
+      <li>Corrected MoBatch filter to clear filter from new MoBatch Filter if user selects empty filter entry.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.7.0</u></strong>
+    <ul>
+      <li>Resolved issue with error returning value using CTRL-L lookup.
+      </li>
+      <li>Corrected issue where unable to insert new rows where key is not identity increment.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.6.0</u></strong>
+    <ul>
+      <li>Fixed issue preventing grid windows from closing on occasion.
+      </li>
+      <li>Provided ability to update parent ID fields in child levels (E.g. Change header ID in line level).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.5.0</u></strong>
+    <ul>
+      <li>Include corrected Wizard.
+      </li>
+      <li>Include amended MoBatch Grid 0.5.5.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.4.0</u></strong>
+    <ul>
+      <li>Added app setting used by new MoBatch grid to control whether to automatically drill-down to loest level available for batch type.
+      </li>
+      <li>Corrected issue with Access Configuration where save button not enabled when change made.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.3.0</u></strong>
+    <ul>
+      <li>Use new MoBatch Grid 0.5.4.
+      </li>
+      <li>Modified timeout for executing stored procedures to be stored in Application Settings in the database rather than the Config/INI files.
+      </li>
+      <li>Corrected layout sizing of Configure Application Settings.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.2.0</u></strong>
+    <ul>
+      <li>Use new MoBatch Grid 0.5.3.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.1.0</u></strong>
+    <ul>
+      <li>Use Telerik Q3 2009 components.
+      </li>
+      <li>Use new MoBatch Grid 0.5.2.
+      </li>
+      <li>Additional changes for new MoBatch Grid to cater for reporting.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.1.0.0</u></strong>
+    <ul>
+      <li>Official version with new batch grid.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.21.0</u></strong>
+    <ul>
+      <li>Incorporate new batch grid.
+      </li>
+      <li>Added database objects required for Generic Search.
+      </li>
+      <li>Corrected to not convert stored procedure parameter values to strings (E.g if parameter is date then pass date type).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.19.0</u></strong>
+    <ul>
+      <li>Amended to cater for configuring Grid Reports for new MoBatch grid (grid:spname parameters...).
+      </li>
+      <li>Provided ability to configure ToolTip SP against columns which is used by new MoBatch grid.
+      </li>
+      <li>Provided ability to configure Default SP which is used by new MoBatch grid to default cell values for row being added.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.18.0</u></strong>
+    <ul>
+      <li>Cater for MoBatch grid layout configuration.
+      </li>
+      <li>Amended SP a_sp_BI_Get_Columns to treat ID Increment fields like computed fields for the new MoBatch Grid.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.17.0</u></strong>
+    <ul>
+      <li>Cater for statuses with trailing spaces in grid when user right-clicks for validate/calculate/process/approve only applicable to 1 or more statuses.
+      </li>
+      <li>Corrected bug with incorrect SP name used when inserting new batch type.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.16.0</u></strong>
+    <ul>
+      <li>Corrected bug preventing the combo boxes from collapsing after selecting desired item.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.15.0</u></strong>
+    <ul>
+      <li>Provide user with option to export grid to Excel with descriptions or with values if grid has drop-downs.
+      </li>
+      <li>Corrected minor bugs in Data Mining stored procedures.
+      </li>
+      <li>Corrected bugs relating to objects in the MoBatch schema.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.14.0</u></strong>
+    <ul>
+      <li>Extended maximum length for SP + parameters specified against events to cater for 1024 characters.
+      </li>
+      <li>Message "You cannot delete a row in this way" only appears once instead of for each selected row when user presses Delete button.
+      </li>
+      <li>Corrected bug in Data Mining causing error when saving query.
+      </li>
+      <li>Corrected Data Mining to train structures instead of models.
+      </li>
+      <li>Corrected bug that may potentially cause error when populating comboboxes in Batch Grid.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.13.0</u></strong>
+    <ul>
+      <li>Provide access to standard MoBatch help (with ability to download latest MoBatch help file from Internet).
+      </li>
+      <li>Provide ability to access customized help (requires customized .chm file + specify name in configuration).
+      </li>
+      <li>Provide ability to specify in system options whether to open standard or custom help when clicking on Help button.
+      </li>
+      <li>Improved system options configuration screen.
+      </li>
+      <li>Provided ability to specify forecolour to use for negative amounts in batch grid (also for selected values).
+      </li>
+      <li>Use latest version of Telerik components.
+      </li>
+      <li>Provide Confirmation message on Excel Export button as button often clicked by mistake and process is time consuming.
+      </li>
+      <li>Hide Batch Grid until finished populating it to prevent user from seeing hidden columns that are only made invisible after the grid is fully populated.
+      </li>
+      <li>Improved performance with events executing stored procedures (especially where frequent calls made such as rowsetup event).
+      </li>
+      <li>Improved general performance populating batch entry spread.
+      </li>
+      <li>Corrected Batch Filter to also clear Field Name when clicking on Clear button.
+      </li>
+      <li>Corrected bug causing error when saving after deleting all entries in batch entry.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.12.0</u></strong>
+    <ul>
+      <li>Further amendments to cater for database residing in the Azure cloud.
+      </li>
+      <li>Make forecolour of negative numerical values red.
+      </li>
+      <li>Changed look of grids in Access screen to enable clearer view of scroll bars etc.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.11.0</u></strong>
+    <ul>
+      <li>Cater for database residing in the Azure cloud.
+      </li>
+      <li>Cater for searching for content from batch entry.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.10.0</u></strong>
+    <ul>
+      <li>Modified Configure Data Mining to cater for ability to View Model Info.
+      </li>
+      <li>Modified Batch Entry to use drop-down button for all Data Mining functions instead of individual buttons which take up too much space.
+      </li>
+      <li>Modified Batch Entry to cater for ability to View Model Info.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.9.0</u></strong>
+    <ul>
+      <li>Default filter search Field Name to the grid column that the user was on when bringing up the filter.
+      </li>
+      <li>Corrected issue where unable to save batch entries where errors reported (E.g. error occurred but row deleted by user).
+      </li>
+      <li>Exclude access to batch category UNUSED to provide the ability to move unused batches to this category without users having access to these.
+      </li>
+      <li>Cater for event stored procedures returning column named Return_Allow_Grid_Add which which allows user to add rows in grid if containing 'True', or disallows adding rows if set to 'False'.
+      </li>
+      <li>Cater for event stored procedures returning column named Return_Allow_Grid_Delete which which allows user to delete rows in grid if containing 'True', or disallows deleting rows if set to 'False'.
+      </li>
+      <li>Cater for event stored procedures returning column named Return_Allow_Grid_Modify which which allows user to modify rows in grid if containing 'True', or disallows modifying rows if set to 'False'.
+      </li>
+      <li>Allow user into batch lines for batch locked by themselves previously (if lock was not released - E.g. abnormal termination).
+      </li>
+      <li>Corrected issue where rowsetup event functionality lost when sorting by grid column.
+      </li>
+      <li>Corrected issue where user was not returning to original row after returning from opening sub-level.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.8.0</u></strong>
+    <ul>
+      <li>Amended Batch Filter Columns to show renamed column name where applicable.
+      </li>
+      <li>Made the Batch Filter Search Condition Type options more user friendly.
+      </li>
+      <li>Configure Batch Categories amended to not allow change to key field for existing entries.
+      </li>
+      <li>Configure Batch Types amended to not allow change to key field for existing entries.
+      </li>
+      <li>Configure Report Categories amended to not allow change to key field for existing entries.
+      </li>
+      <li>Configure Report Items amended to not allow change to key field for existing entries.
+      </li>
+      <li>Allow user to adjust Batch Entry column widths.
+      </li>
+      <li>Automatically create data mining database &amp; datasource in Data Mining Configuration screen if these do not already exist.
+      </li>
+      <li>Amended to refresh menu options when applicable changes are mine.
+      </li>
+      <li>Corrected issue where application terminates with an error if right-clicking onto left of empty batch.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.7.0</u></strong>
+    <ul>
+      <li>Cater for configuring data mining.
+      </li>
+      <li>Cater for running data mining queries in the batch entry screen.
+      </li>
+      <li>Cater for locking at header (batch) ID level, disallowing multiple users from working on lines/distributions for the same batch concurrently.
+      </li>
+      <li>Corrected issue where "read-only for existing" become editable when clicking on column header.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.6.0</u></strong>
+    <ul>
+      <li>Renamed Batch-It to MoBatch.
+      </li>
+      <li>Cater for stored procedures returning value with column name being the grid column name preceded by "Fill_Empty_" in which case the appropriate cell is populated only if it is empty.
+      </li>
+      <li>Cater for special stored procedure parameter named Special_HeaderID which will be replaced with the (batch) header id in the the stored procedure call.
+      </li>
+      <li>Cater for special stored procedure parameter named Special_LineID which will be replaced with the line id in the the stored procedure call.
+      </li>
+      <li>Improved verification of licensing to provide a single consolidated warning of expired or expiring licenses at start-up of application.
+      </li>
+      <li>Provided functionality to export grid data to Excel.
+      </li>
+      <li>Make Validate, Calculate, Approve &amp; Process buttons invisible if not associated to a stored procedure in Setup.
+      </li>
+      <li>Corrected headers of batch screen setup confirguration grid to be what they were in earlier versions.
+      </li>
+      <li>Corrected issue where locks on batches not always released when exiting a batch.
+      </li>
+      <li>Corrected Alignment grid column in Batch Screen Setup to be a drop-down option.
+      </li>
+      <li>Corrected issue where row_readonly was not working if called from the Row Setup event.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.5.0</u></strong>
+    <ul>
+      <li>Cater for locking of batches (including new screen enabling releasing of locked batches if necessary).
+      </li>
+      <li>If user clicks on special display values reflected above batch grid, then value is also reflected in the status bar below the grid (helpful if display value too large to reflect above grid).
+      </li>
+      <li>Improved error handling when saving batches so that error recorded against relevant row.
+      </li>
+      <li>Improved error handling when maintaining reports and report categories to avoid losing captured data if invalid data has been entered.
+      </li>
+      <li>Corrected primary keys where they were not properly created on BI_Columns and BI_Tables.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.4.0</u></strong>
+    <ul>
+      <li>Amended to retain sort sequence whenever refreshing the batch grid.
+      </li>
+      <li>Provided SP to rebuild info stored in ModelWareBatchProcessing relating to all SPs used in Batch-It. Useful if copying MoBatch database to new server. Run "EXEC a_sp_BI_Setup_StoredProcedures".
+      </li>
+      <li>Corrected Report Items to show scroll bar if applicable.
+      </li>
+      <li>Corrected to not allow user to sort Search Criteria in Select (CTRL-L) screen as this would cause problems.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.3.0</u></strong>
+    <ul>
+      <li>Process cell Validation stored procedure even if read-only cell. Note! May be necessary to amend some existing SP's to use new Special_IsChangedCell parameter if not wanting to process for cells that have not changed - E.g. read-only cells.
+      </li>
+      <li>Made cursor less sensitive when right-clicking to select row.
+      </li>
+      <li>Provided ability to specify alignment of cell data (E.g. used to right-align numeric data).
+      </li>
+      <li>Provided ability to specify format of cell data (catering for standard .Net formats. E.g. used to eliminate decimals).
+      </li>
+      <li>Cater for special key parameter Special_IsAddRow which, when used, will indicate whether the row being processed is a new row being added.
+      </li>
+      <li>Cater for special key parameter Special_IsChangedCell which, when used, will indicate whether any data has changed in the current cell.
+      </li>
+      <li>Cater for special key parameter Special_SelectWhere which, when used, will pass the criteria used by the SQL WHERE clause to populate the grid.
+      </li>
+      <li>Cater for special key parameter Special_SelectFrom which, when used, will pass the name of the table that the grid data relates to.
+      </li>
+      <li>Sort batch entries according to key values (in theory entries should then appear in the order they were entered).
+      </li>
+      <li>Corrected issue where user may lose any changes made to a batch if opening another screen before saving.
+      </li>
+      <li>Corrected issue where "After Closing Lines" or "After Closing Distribution" stored procedures would not fire correctly.
+      </li>
+      <li>Corrected where changes are lost if user clicks on Save button from a cell with an invalid content.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.2.0</u></strong>
+    <ul>
+      <li>Provide confirmation message when clicking on buttons Validate, Calculate, Approve and Process as these apply to all entries (not just entries that might be selected).
+      </li>
+      <li>Removed alternating row colour from batch grid as this was causing confusion.
+      </li>
+      <li>Cater for event stored procedures returning column named RETURN_SUPPRESS_REFRESH which suppresses repainting of the grid after executing the stored procedure in the After Closing Lines, After Closing Distribution, Row Calculate, Row Validate, Row Approve &amp; Row Process events (E.g. If wanting to return background colour and not lose it by repainting grid).
+      </li>
+      <li>Cater for event stored procedures returning column named GRIDERRORMSG which will only update the grid with an error (no messagebox shown).
+      </li>
+      <li>Cater for event stored procedures returning column named RETURN_ROWNUMBER to identify row number that following instructions should relate to (must occur in column prior to instructions relating to rows).
+      </li>
+      <li>Cater for event stored procedures returning columns named RETURN_HEADERID, RETURN_LINEID &amp; RETURN_DISTRID to specify keys to be used to identify row number that following instructions should relate to (must occur in column prior to instructions relating to rows).
+      </li>
+      <li>Cater for more than 1 row being returned from event stored procedures. Also cater for separate select statements in stored procedure.
+      </li>
+      <li>If event stored procedures return errors then still continue processing rest of columns selected by the stored procedure.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.1.2</u></strong>
+    <ul>
+      <li>Corrected issue where "concurrency violation" error may occur when saving batch entries.
+      </li>
+      <li>Enhanced paste facility to enable pasting a (single) value into multiple selected cells.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.1.1</u></strong>
+    <ul>
+      <li>Do not ask user to save if double-clicking/opening on an entry in a level without a sub-level.
+      </li>
+      <li>Disable open button when working in a level without a sub-level.
+      </li>
+      <li>Enable the save button if a stored procedure populates other cells.
+      </li>
+      <li>Amend combo-boxes/buttons at bottom of Assign Access to Role to cater for lower resolution screens.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.1.0</u></strong>
+    <ul>
+      <li>Using new version of Teleric components (new Telerik DLL files).
+      </li>
+      <li>Use a better theme (better colours etc) for the Access maintenance grids.
+      </li>
+      <li>Created primary key against tables BI_BatchTypes, BI_Columns &amp; BI_Tables.
+      </li>
+      <li>Prevent user from modifying the Role ID of existing entries when configuring Roles (would cause error when saving).
+      </li>
+      <li>Prevent user from modifying the User ID of existing entries when configuring Users (would cause error when saving).
+      </li>
+      <li>Prevent user from modifying either Role or Access of existing entries when configuring Access to Roles (would cause error when saving).
+      </li>
+      <li>Amended CTRL-V paste facility to cater for hidden columns and pasting into drop-down cells.
+      </li>
+      <li>Extended size allowed for license in case of long batch type names.
+      </li>
+      <li>Corrected issue where unable to save changes after applying a filter.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.20</u></strong>
+    <ul>
+      <li>Corrected so that if no filter criteria specified then does not show filter icon on filter button.
+      </li>
+      <li>Corrected issue where error might occur when SP specified against row select event and user clicks on a new row.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.19</u></strong>
+    <ul>
+      <li>Amended to return to parent screen when closing child. Also prevent access to parent screen when child is open.
+      </li>
+      <li>Amended to disallow deleting of read-only rows.
+      </li>
+      <li>Catered for computed (calculated) fields existing in the batch tables.
+      </li>
+      <li>Corrected issue where incorrect screen caption may be reflected if working on several batch types and opening a sub-level.
+      </li>
+      <li>Corrected issue where number of rows returned into grid was not always showing.
+      </li>
+      <li>Corrected so that Save button is enabled when returning a value from a Search screen (using CTRL-L).
+      </li>
+      <li>Corrected issue when adding new row only by returning value from Selection Screen (CTRL-L) but row would be lost when saving.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.18</u></strong>
+    <ul>
+      <li>Amended column headings of grid to highlight to user what are required columns (bold header text), read-only columns (grey background), read-only for existing (italic header text) or having access to Search Screen via CTRL-L (green background).
+      </li>
+      <li>Corrected handling of INI configuration files when a single location is specified in ExternalAppSettings configuration setting.
+      </li>
+      <li>Corrected bug when using read-only Existing where cells that should be read-only then become editable after returning from another screen (E.g. when returning to header from lines form).
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.17</u></strong>
+    <ul>
+      <li>Extend length of stored procedures and their parameters that can be stored against batch columns.
+      </li>
+      <li>Corrected issue where unable to save when tabbing out of last row into a new row if validation process exists against first column.
+      </li>
+      <li>Corrected issue where value returned from lookup screen is not show immediately and is not used in validation event.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.16</u></strong>
+    <ul>
+      <li>Provided ability to copy from and paste into batch grid.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.15</u></strong>
+    <ul>
+      <li>Include cell content value when a cell/column cannot be made a drop-down due to cell contents not being a valid entry in the drop-down list.
+      </li>
+      <li>Provided ability to re-populate drop-down values of a column through a stored procedure.
+      </li>
+      <li>Corrected where Row Select event was not always returning values returned from stored procedure into other cells.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.14</u></strong>
+    <ul>
+      <li>Amended the look &amp; feel of the grids used within the Access screen (allows grouping etc).
+      </li>
+      <li>Cater for new stored procedures executed after loading grid (including refresh), deleting rows and saving.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.13</u></strong>
+    <ul>
+      <li>Provided tooltips on grid columns and on text fields. Also provided detail on batch-level stored procedures.
+      </li>
+      <li>Provide list of expected parameters when incorrect number of paramaters provided with for a stored procedure.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.12</u></strong>
+    <ul>
+      <li>Provide Configuration Wizard functionality.
+      </li>
+      <li>Provide ability to open multiple (different) batch entry screens simultaneously.
+      </li>
+      <li>Amend title from Application Selection to Configuration Selection and enable selection by typing start of configuration description name.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.11</u></strong>
+    <ul>
+      <li>Cater for multiple statuses against Calculate, Validate, Approve and Process buttons (comma delimited).
+      </li>
+      <li>Extend length of stored procedures and their parameters that can be stored against batches.
+      </li>
+      <li>Amended to reflect connection (data source and catalog) in screen header.
+      </li>
+      <li>Provide ability to populate drop-down lists using stored procedures having as parameters values from other columns.
+      </li>
+      <li>Cater for reflecting version History.
+      </li>
+      <li>Reflect version and logged in user in About screen.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.10</u></strong>
+    <ul>
+      <li>Increase size of access ID to cater for larger batch names.
+      </li>
+      <li>Cater for categories of batches.
+      </li>
+      <li>Added maintenance screens for reports and categories.
+      </li>
+      <li>Provide right-click/delete functionality (with confirmation) for all grids instead of just clicking Delete button.
+      </li>
+      <li>Corrected problem where one could not successfully create a brand new database from scratch.
+      </li>
+      <li>Corrected bug where qualifier not saved properly for new batch.
+      </li>
+    </ul><br/>
+    <strong><u>Version 1.0.0.8</u></strong>
+    <ul>
+      <li>Provide ability to assign a "status" to certain "events" calling stored procedures. E.g. Only allowed to validate entries where status is 'Complete'.
+      </li>
+      <li>Provided Lookup functionality (Ctrl-L) to list stored procedures in Columns Configuration screen.
+      </li>
+      <li>Enable the same MoBatch executable to be used with several different configurations/databases.
+      </li>
+      <li>Cater for functionality to filter results.
+      </li>
+      <li>Cater for distribution screen.
+      </li>
+      <li>Corrected issue where if "0" is entered into read-only cell, the cell is cleared out.
+      </li>
+      <li>Corrected issue with error message shown when attempting to open both the Columns Configuration screen and Batch Entry at the same time.
+      </li>
+      <li>Handle deleting of all lines in in a Batch Entry grid.
+      </li>
+    </ul>
+  </body>
+</html>

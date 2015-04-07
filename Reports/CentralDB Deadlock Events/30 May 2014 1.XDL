@@ -1,0 +1,86 @@
+﻿<event name="xml_deadlock_report" package="sqlserver" timestamp="2014-05-30T07:22:51.376Z">
+  <data name="xml_report">
+    <type name="xml" package="package0" />
+    <value>
+      <deadlock>
+        <victim-list>
+          <victimProcess id="process3241ac558" />
+        </victim-list>
+        <process-list>
+          <process id="process3241ac558" taskpriority="0" logused="0" waitresource="PAGE: 7:1:242742 " waittime="4076" ownerId="486394290" transactionname="SELECT" lasttranstarted="2014-05-30T09:22:47.073" XDES="0x2934c5ca0" lockMode="S" schedulerid="3" kpid="4160" status="suspended" spid="84" sbid="0" ecid="0" priority="0" trancount="0" lastbatchstarted="2014-05-30T09:22:47.073" lastbatchcompleted="2014-05-30T09:22:47.073" lastattention="1900-01-01T00:00:00.073" clientapp=".Net SqlClient Data Provider" hostname="ASPROD01" hostpid="5516" loginname="ABSOLUTE\ASPROD01$" isolationlevel="serializable (4)" xactid="486394290" currentdb="7" lockTimeout="4294967295" clientoption1="671088672" clientoption2="128056">
+            <executionStack>
+              <frame procname="adhoc" line="1" stmtstart="118" sqlhandle="0x02000000df53f710e87e0bea834841f830c316776ff1f5f70000000000000000000000000000000000000000">
+SELECT TOP 100 PERCENT  [dbo].[AmountDenominations].[AmountDenominationID], [dbo].[AmountDenominations].[fkAmountsID], [dbo].[AmountDenominations].[Currency], [dbo].[AmountDenominations].[Denomination], [dbo].[AmountDenominations].[Count] FROM [dbo].[AmountDenominations] WHERE [dbo].[AmountDenominations].[fkAmountsID] = @fkAmountsID0 ORDER BY [AmountDenominationID] ASC;    </frame>
+              <frame procname="unknown" line="1" sqlhandle="0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+unknown    </frame>
+            </executionStack>
+            <inputbuf>
+(@fkAmountsID0 int)/* GetSelectSql(AmountDenominations) */ SELECT TOP 100 PERCENT  [dbo].[AmountDenominations].[AmountDenominationID], [dbo].[AmountDenominations].[fkAmountsID], [dbo].[AmountDenominations].[Currency], [dbo].[AmountDenominations].[Denomination], [dbo].[AmountDenominations].[Count] FROM [dbo].[AmountDenominations] WHERE [dbo].[AmountDenominations].[fkAmountsID] = @fkAmountsID0 ORDER BY [AmountDenominationID] ASC;   </inputbuf>
+          </process>
+          <process id="process3ce417498" taskpriority="0" logused="0" waitresource="PAGE: 7:1:242742 " waittime="4036" ownerId="486394285" transactionname="SELECT" lasttranstarted="2014-05-30T09:22:47.023" XDES="0x3f4303ca0" lockMode="S" schedulerid="2" kpid="7188" status="suspended" spid="75" sbid="0" ecid="0" priority="0" trancount="0" lastbatchstarted="2014-05-30T09:22:47.023" lastbatchcompleted="2014-05-30T09:22:47.023" lastattention="1900-01-01T00:00:00.023" clientapp=".Net SqlClient Data Provider" hostname="ASPROD01" hostpid="5516" loginname="ABSOLUTE\ASPROD01$" isolationlevel="serializable (4)" xactid="486394285" currentdb="7" lockTimeout="4294967295" clientoption1="673185824" clientoption2="128056">
+            <executionStack>
+              <frame procname="CashTrace_SBV.dbo.spGetDepositSlipInfo" line="16" stmtstart="1030" stmtend="6354" sqlhandle="0x030007006807200005029e0004a0000001000000000000000000000000000000000000000000000000000000">
+SELECT
+		t.ClientCode, 
+		t.ActionDateTime,
+		t.Narrative,		
+		t.TransactionReference,
+		t.fkBagId,
+		t.BagNumber,
+		NumberNotes10 = SUM(CASE WHEN Denomination = 10 THEN Count ELSE 0 END),
+		NumberNotes20 = SUM(CASE WHEN Denomination = 20 THEN Count ELSE 0 END),
+		NumberNotes50 = SUM(CASE WHEN Denomination = 50 THEN Count ELSE 0 END),
+		NumberNotes100 = SUM(CASE WHEN Denomination = 100 THEN Count ELSE 0 END),
+		NumberNotes200 = SUM(CASE WHEN Denomination = 200 THEN Count ELSE 0 END),
+		NumberCoins5c = SUM(CASE WHEN Denomination = 0.05 THEN Count ELSE 0 END),
+		NumberCoins10c = SUM(CASE WHEN Denomination = 0.10 THEN Count ELSE 0 END),
+		NumberCoins20c = SUM(CASE WHEN Denomination = 0.20 THEN Count ELSE 0 END),
+		NumberCoins50c = SUM(CASE WHEN Denomination = 0.50 THEN Count ELSE 0 END),
+		NumberCoinsR1= SUM(CASE WHEN Denomination = 1 THEN Count ELSE 0 END),
+		NumberCoinsR2 = SUM(CASE WHEN Denomination = 2 THEN Count ELSE 0 END),
+		NumberCoinsR5 = SUM(CASE WHEN Denomination = 5 THEN Count ELSE    </frame>
+            </executionStack>
+            <inputbuf>
+Proc [Database Id = 7 Object Id = 2099048]   </inputbuf>
+          </process>
+          <process id="process3ce417868" taskpriority="0" logused="2148" waitresource="OBJECT: 7:974626515:0 " waittime="4035" ownerId="486394320" transactionname="user_transaction" lasttranstarted="2014-05-30T09:22:47.267" XDES="0x3f4311048" lockMode="IX" schedulerid="2" kpid="5472" status="suspended" spid="87" sbid="0" ecid="0" priority="0" trancount="2" lastbatchstarted="2014-05-30T09:22:47.340" lastbatchcompleted="2014-05-30T09:22:47.340" lastattention="1900-01-01T00:00:00.340" clientapp=".Net SqlClient Data Provider" hostname="ASPROD01" hostpid="5516" loginname="ABSOLUTE\ASPROD01$" isolationlevel="serializable (4)" xactid="486394320" currentdb="7" lockTimeout="4294967295" clientoption1="671088672" clientoption2="128056">
+            <executionStack>
+              <frame procname="adhoc" line="1" stmtstart="448" stmtend="986" sqlhandle="0x02000000d8e41630701ce894df9a49cac95abd515f7a62ac0000000000000000000000000000000000000000">
+INSERT INTO [dbo].[Transactions]([fkUserID],[RowGuid],[ActionDateTime],[fkBagId],[TransactionReference],[CashIntransitNumber],[Narrative],[fkAmountID]) VALUES(@fkUserID,@RowGuid,@ActionDateTime,@fkBagId,@TransactionReference,@CashIntransitNumber,@Narrative,@fkAmountID)    </frame>
+              <frame procname="unknown" line="1" sqlhandle="0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+unknown    </frame>
+            </executionStack>
+            <inputbuf>
+(@fkUserID uniqueidentifier,@RowGuid uniqueidentifier,@ActionDateTime datetime,@fkBagId int,@TransactionReference varchar(8000),@CashIntransitNumber int,@Narrative varchar(8),@fkAmountID int)/* GetInsertSql(Transactions) */ INSERT INTO [dbo].[Transactions]([fkUserID],[RowGuid],[ActionDateTime],[fkBagId],[TransactionReference],[CashIntransitNumber],[Narrative],[fkAmountID]) VALUES(@fkUserID,@RowGuid,@ActionDateTime,@fkBagId,@TransactionReference,@CashIntransitNumber,@Narrative,@fkAmountID);SELECT SCOPE_IDENTITY() AS newID;   </inputbuf>
+          </process>
+        </process-list>
+        <resource-list>
+          <pagelock fileid="1" pageid="242742" dbid="7" subresource="FULL" objectname="CashTrace_SBV.dbo.AmountDenominations" id="lock2d3338600" mode="IX" associatedObjectId="72057594043826176">
+            <owner-list>
+              <owner id="process3ce417868" mode="IX" />
+            </owner-list>
+            <waiter-list>
+              <waiter id="process3241ac558" mode="S" requestType="wait" />
+            </waiter-list>
+          </pagelock>
+          <pagelock fileid="1" pageid="242742" dbid="7" subresource="FULL" objectname="CashTrace_SBV.dbo.AmountDenominations" id="lock2d3338600" mode="IX" associatedObjectId="72057594043826176">
+            <owner-list>
+              <owner id="process3241ac558" mode="S" requestType="wait" />
+            </owner-list>
+            <waiter-list>
+              <waiter id="process3ce417498" mode="S" requestType="wait" />
+            </waiter-list>
+          </pagelock>
+          <objectlock lockPartition="0" objid="974626515" subresource="FULL" dbid="7" objectname="CashTrace_SBV.dbo.Transactions" id="lock286d9e800" mode="S" associatedObjectId="974626515">
+            <owner-list>
+              <owner id="process3ce417498" mode="S" />
+            </owner-list>
+            <waiter-list>
+              <waiter id="process3ce417868" mode="IX" requestType="wait" />
+            </waiter-list>
+          </objectlock>
+        </resource-list>
+      </deadlock>
+    </value>
+  </data>
+</event>

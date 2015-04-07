@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <columnSettings>
+    <ColumnSetting name="timestamp">
+      <width>160</width>
+      <mergedColumns />
+    </ColumnSetting>
+    <ColumnSetting name="name">
+      <width>271</width>
+      <mergedColumns />
+    </ColumnSetting>
+  </columnSettings>
+  <filterExp xsi:type="FilterBinaryExpression">
+    <BinaryOperator>EQ</BinaryOperator>
+    <Column>name</Column>
+    <Value>xml_deadlock_report</Value>
+  </filterExp>
+</ViewSetting>

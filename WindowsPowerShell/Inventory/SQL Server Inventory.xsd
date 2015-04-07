@@ -1,0 +1,936 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/powershell/2004/04" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Objs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Obj">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="TN">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="T" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="MS">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:choice maxOccurs="unbounded">
+                      <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element minOccurs="0" name="TNRef">
+                              <xs:complexType>
+                                <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="MS">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:choice maxOccurs="unbounded">
+                                    <xs:element minOccurs="0" maxOccurs="unbounded" name="DT">
+                                      <xs:complexType>
+                                        <xs:simpleContent>
+                                          <xs:extension base="xs:dateTime">
+                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                          </xs:extension>
+                                        </xs:simpleContent>
+                                      </xs:complexType>
+                                    </xs:element>
+                                    <xs:element minOccurs="0" maxOccurs="unbounded" name="I32">
+                                      <xs:complexType>
+                                        <xs:simpleContent>
+                                          <xs:extension base="xs:unsignedByte">
+                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                          </xs:extension>
+                                        </xs:simpleContent>
+                                      </xs:complexType>
+                                    </xs:element>
+                                    <xs:element minOccurs="0" name="Obj">
+                                      <xs:complexType>
+                                        <xs:sequence>
+                                          <xs:element minOccurs="0" name="TNRef">
+                                            <xs:complexType>
+                                              <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                            </xs:complexType>
+                                          </xs:element>
+                                          <xs:element minOccurs="0" name="LST">
+                                            <xs:complexType>
+                                              <xs:sequence>
+                                                <xs:element minOccurs="0" name="Obj">
+                                                  <xs:complexType>
+                                                    <xs:sequence>
+                                                      <xs:element minOccurs="0" name="TNRef">
+                                                        <xs:complexType>
+                                                          <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                        </xs:complexType>
+                                                      </xs:element>
+                                                      <xs:element minOccurs="0" name="MS">
+                                                        <xs:complexType>
+                                                          <xs:sequence>
+                                                            <xs:choice maxOccurs="unbounded">
+                                                              <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element minOccurs="0" name="TNRef">
+                                                                      <xs:complexType>
+                                                                        <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                    <xs:element minOccurs="0" name="MS">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence>
+                                                                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                                                            <xs:complexType>
+                                                                              <xs:sequence>
+                                                                                <xs:element minOccurs="0" name="TNRef">
+                                                                                  <xs:complexType>
+                                                                                    <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                                <xs:element minOccurs="0" name="MS">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                      <xs:choice maxOccurs="unbounded">
+                                                                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                                                                          <xs:complexType>
+                                                                                            <xs:sequence>
+                                                                                              <xs:element minOccurs="0" name="TN">
+                                                                                                <xs:complexType>
+                                                                                                  <xs:sequence>
+                                                                                                    <xs:element minOccurs="0" maxOccurs="unbounded" name="T" type="xs:string" />
+                                                                                                  </xs:sequence>
+                                                                                                  <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                </xs:complexType>
+                                                                                              </xs:element>
+                                                                                              <xs:element minOccurs="0" name="TNRef">
+                                                                                                <xs:complexType>
+                                                                                                  <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                </xs:complexType>
+                                                                                              </xs:element>
+                                                                                              <xs:element minOccurs="0" name="LST">
+                                                                                                <xs:complexType>
+                                                                                                  <xs:sequence>
+                                                                                                    <xs:element minOccurs="0" maxOccurs="unbounded" name="S" type="xs:string" />
+                                                                                                    <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                                                                                      <xs:complexType>
+                                                                                                        <xs:sequence>
+                                                                                                          <xs:element minOccurs="0" name="TNRef">
+                                                                                                            <xs:complexType>
+                                                                                                              <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                            </xs:complexType>
+                                                                                                          </xs:element>
+                                                                                                          <xs:element minOccurs="0" name="MS">
+                                                                                                            <xs:complexType>
+                                                                                                              <xs:sequence>
+                                                                                                                <xs:choice maxOccurs="unbounded">
+                                                                                                                  <xs:element minOccurs="0" name="Obj">
+                                                                                                                    <xs:complexType>
+                                                                                                                      <xs:sequence>
+                                                                                                                        <xs:element minOccurs="0" name="TNRef">
+                                                                                                                          <xs:complexType>
+                                                                                                                            <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                                          </xs:complexType>
+                                                                                                                        </xs:element>
+                                                                                                                        <xs:element minOccurs="0" name="LST">
+                                                                                                                          <xs:complexType>
+                                                                                                                            <xs:sequence minOccurs="0">
+                                                                                                                              <xs:element minOccurs="0" maxOccurs="unbounded" name="S" type="xs:string" />
+                                                                                                                            </xs:sequence>
+                                                                                                                          </xs:complexType>
+                                                                                                                        </xs:element>
+                                                                                                                      </xs:sequence>
+                                                                                                                      <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                      <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                                                    </xs:complexType>
+                                                                                                                  </xs:element>
+                                                                                                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                                                                                    <xs:complexType>
+                                                                                                                      <xs:simpleContent>
+                                                                                                                        <xs:extension base="xs:string">
+                                                                                                                          <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                        </xs:extension>
+                                                                                                                      </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                  </xs:element>
+                                                                                                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="B">
+                                                                                                                    <xs:complexType>
+                                                                                                                      <xs:simpleContent>
+                                                                                                                        <xs:extension base="xs:boolean">
+                                                                                                                          <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                        </xs:extension>
+                                                                                                                      </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                  </xs:element>
+                                                                                                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="I32">
+                                                                                                                    <xs:complexType>
+                                                                                                                      <xs:simpleContent>
+                                                                                                                        <xs:extension base="xs:short">
+                                                                                                                          <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                        </xs:extension>
+                                                                                                                      </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                  </xs:element>
+                                                                                                                  <xs:element minOccurs="0" name="U32">
+                                                                                                                    <xs:complexType>
+                                                                                                                      <xs:simpleContent>
+                                                                                                                        <xs:extension base="xs:unsignedInt">
+                                                                                                                          <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                        </xs:extension>
+                                                                                                                      </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                  </xs:element>
+                                                                                                                  <xs:element minOccurs="0" name="U64">
+                                                                                                                    <xs:complexType>
+                                                                                                                      <xs:simpleContent>
+                                                                                                                        <xs:extension base="xs:unsignedLong">
+                                                                                                                          <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                        </xs:extension>
+                                                                                                                      </xs:simpleContent>
+                                                                                                                    </xs:complexType>
+                                                                                                                  </xs:element>
+                                                                                                                </xs:choice>
+                                                                                                              </xs:sequence>
+                                                                                                            </xs:complexType>
+                                                                                                          </xs:element>
+                                                                                                        </xs:sequence>
+                                                                                                        <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                                      </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                  </xs:sequence>
+                                                                                                </xs:complexType>
+                                                                                              </xs:element>
+                                                                                              <xs:element minOccurs="0" name="MS">
+                                                                                                <xs:complexType>
+                                                                                                  <xs:sequence>
+                                                                                                    <xs:choice maxOccurs="unbounded">
+                                                                                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="U32">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:simpleContent>
+                                                                                                            <xs:extension base="xs:unsignedShort">
+                                                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                            </xs:extension>
+                                                                                                          </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                      <xs:element minOccurs="0" name="DT">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:simpleContent>
+                                                                                                            <xs:extension base="xs:dateTime">
+                                                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                            </xs:extension>
+                                                                                                          </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="Nil">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:simpleContent>
+                                                                                                            <xs:extension base="xs:string">
+                                                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                            </xs:extension>
+                                                                                                          </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                      <xs:element minOccurs="0" name="U64">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:simpleContent>
+                                                                                                            <xs:extension base="xs:unsignedLong">
+                                                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                            </xs:extension>
+                                                                                                          </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="U16">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:simpleContent>
+                                                                                                            <xs:extension base="xs:unsignedByte">
+                                                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                            </xs:extension>
+                                                                                                          </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                      <xs:element minOccurs="0" name="Sg">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:simpleContent>
+                                                                                                            <xs:extension base="xs:decimal">
+                                                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                            </xs:extension>
+                                                                                                          </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                      <xs:element minOccurs="0" name="Obj">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:sequence>
+                                                                                                            <xs:element minOccurs="0" name="TN">
+                                                                                                              <xs:complexType>
+                                                                                                                <xs:sequence>
+                                                                                                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="T" type="xs:string" />
+                                                                                                                </xs:sequence>
+                                                                                                                <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                              </xs:complexType>
+                                                                                                            </xs:element>
+                                                                                                            <xs:element minOccurs="0" name="TNRef">
+                                                                                                              <xs:complexType>
+                                                                                                                <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                              </xs:complexType>
+                                                                                                            </xs:element>
+                                                                                                            <xs:element minOccurs="0" name="LST">
+                                                                                                              <xs:complexType>
+                                                                                                                <xs:sequence>
+                                                                                                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="U16" type="xs:unsignedByte" />
+                                                                                                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                                                                                                    <xs:complexType>
+                                                                                                                      <xs:sequence>
+                                                                                                                        <xs:element minOccurs="0" name="TNRef">
+                                                                                                                          <xs:complexType>
+                                                                                                                            <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                                          </xs:complexType>
+                                                                                                                        </xs:element>
+                                                                                                                        <xs:element minOccurs="0" name="MS">
+                                                                                                                          <xs:complexType>
+                                                                                                                            <xs:sequence>
+                                                                                                                              <xs:element minOccurs="0" name="S">
+                                                                                                                                <xs:complexType>
+                                                                                                                                  <xs:simpleContent>
+                                                                                                                                    <xs:extension base="xs:string">
+                                                                                                                                      <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                                    </xs:extension>
+                                                                                                                                  </xs:simpleContent>
+                                                                                                                                </xs:complexType>
+                                                                                                                              </xs:element>
+                                                                                                                              <xs:element minOccurs="0" maxOccurs="unbounded" name="U64">
+                                                                                                                                <xs:complexType>
+                                                                                                                                  <xs:simpleContent>
+                                                                                                                                    <xs:extension base="xs:unsignedLong">
+                                                                                                                                      <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                                    </xs:extension>
+                                                                                                                                  </xs:simpleContent>
+                                                                                                                                </xs:complexType>
+                                                                                                                              </xs:element>
+                                                                                                                              <xs:element minOccurs="0" name="Obj">
+                                                                                                                                <xs:complexType>
+                                                                                                                                  <xs:sequence>
+                                                                                                                                    <xs:element minOccurs="0" name="TNRef">
+                                                                                                                                      <xs:complexType>
+                                                                                                                                        <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                                                      </xs:complexType>
+                                                                                                                                    </xs:element>
+                                                                                                                                    <xs:element minOccurs="0" name="LST">
+                                                                                                                                      <xs:complexType>
+                                                                                                                                        <xs:sequence minOccurs="0">
+                                                                                                                                          <xs:element minOccurs="0" name="Obj">
+                                                                                                                                            <xs:complexType>
+                                                                                                                                              <xs:sequence>
+                                                                                                                                                <xs:element minOccurs="0" name="TNRef">
+                                                                                                                                                  <xs:complexType>
+                                                                                                                                                    <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                                                                  </xs:complexType>
+                                                                                                                                                </xs:element>
+                                                                                                                                                <xs:element minOccurs="0" name="MS">
+                                                                                                                                                  <xs:complexType>
+                                                                                                                                                    <xs:sequence>
+                                                                                                                                                      <xs:choice maxOccurs="unbounded">
+                                                                                                                                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                                                                                                                          <xs:complexType>
+                                                                                                                                                            <xs:simpleContent>
+                                                                                                                                                              <xs:extension base="xs:string">
+                                                                                                                                                                <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                                                              </xs:extension>
+                                                                                                                                                            </xs:simpleContent>
+                                                                                                                                                          </xs:complexType>
+                                                                                                                                                        </xs:element>
+                                                                                                                                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="U64">
+                                                                                                                                                          <xs:complexType>
+                                                                                                                                                            <xs:simpleContent>
+                                                                                                                                                              <xs:extension base="xs:unsignedLong">
+                                                                                                                                                                <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                                                              </xs:extension>
+                                                                                                                                                            </xs:simpleContent>
+                                                                                                                                                          </xs:complexType>
+                                                                                                                                                        </xs:element>
+                                                                                                                                                      </xs:choice>
+                                                                                                                                                    </xs:sequence>
+                                                                                                                                                  </xs:complexType>
+                                                                                                                                                </xs:element>
+                                                                                                                                              </xs:sequence>
+                                                                                                                                              <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                                                                            </xs:complexType>
+                                                                                                                                          </xs:element>
+                                                                                                                                        </xs:sequence>
+                                                                                                                                      </xs:complexType>
+                                                                                                                                    </xs:element>
+                                                                                                                                  </xs:sequence>
+                                                                                                                                  <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                                  <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                                                                </xs:complexType>
+                                                                                                                              </xs:element>
+                                                                                                                            </xs:sequence>
+                                                                                                                          </xs:complexType>
+                                                                                                                        </xs:element>
+                                                                                                                      </xs:sequence>
+                                                                                                                      <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                                                    </xs:complexType>
+                                                                                                                  </xs:element>
+                                                                                                                </xs:sequence>
+                                                                                                              </xs:complexType>
+                                                                                                            </xs:element>
+                                                                                                          </xs:sequence>
+                                                                                                          <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                          <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                      <xs:element minOccurs="0" name="B">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:simpleContent>
+                                                                                                            <xs:extension base="xs:boolean">
+                                                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                            </xs:extension>
+                                                                                                          </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                      <xs:element minOccurs="0" name="I32">
+                                                                                                        <xs:complexType>
+                                                                                                          <xs:simpleContent>
+                                                                                                            <xs:extension base="xs:unsignedByte">
+                                                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                            </xs:extension>
+                                                                                                          </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                      </xs:element>
+                                                                                                    </xs:choice>
+                                                                                                  </xs:sequence>
+                                                                                                </xs:complexType>
+                                                                                              </xs:element>
+                                                                                            </xs:sequence>
+                                                                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                            <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                          </xs:complexType>
+                                                                                        </xs:element>
+                                                                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="U32">
+                                                                                          <xs:complexType>
+                                                                                            <xs:simpleContent>
+                                                                                              <xs:extension base="xs:unsignedShort">
+                                                                                                <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                              </xs:extension>
+                                                                                            </xs:simpleContent>
+                                                                                          </xs:complexType>
+                                                                                        </xs:element>
+                                                                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                                                          <xs:complexType>
+                                                                                            <xs:simpleContent>
+                                                                                              <xs:extension base="xs:string">
+                                                                                                <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                              </xs:extension>
+                                                                                            </xs:simpleContent>
+                                                                                          </xs:complexType>
+                                                                                        </xs:element>
+                                                                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="Nil">
+                                                                                          <xs:complexType>
+                                                                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                          </xs:complexType>
+                                                                                        </xs:element>
+                                                                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="B">
+                                                                                          <xs:complexType>
+                                                                                            <xs:simpleContent>
+                                                                                              <xs:extension base="xs:boolean">
+                                                                                                <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                              </xs:extension>
+                                                                                            </xs:simpleContent>
+                                                                                          </xs:complexType>
+                                                                                        </xs:element>
+                                                                                      </xs:choice>
+                                                                                    </xs:sequence>
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                                <xs:element minOccurs="0" name="LST">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                                                                        <xs:complexType>
+                                                                                          <xs:sequence>
+                                                                                            <xs:element minOccurs="0" name="TNRef">
+                                                                                              <xs:complexType>
+                                                                                                <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                              </xs:complexType>
+                                                                                            </xs:element>
+                                                                                            <xs:element minOccurs="0" name="MS">
+                                                                                              <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                  <xs:choice maxOccurs="unbounded">
+                                                                                                    <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                                                                      <xs:complexType>
+                                                                                                        <xs:simpleContent>
+                                                                                                          <xs:extension base="xs:string">
+                                                                                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                          </xs:extension>
+                                                                                                        </xs:simpleContent>
+                                                                                                      </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element minOccurs="0" name="Obj">
+                                                                                                      <xs:complexType>
+                                                                                                        <xs:sequence>
+                                                                                                          <xs:element minOccurs="0" name="DT" type="xs:dateTime" />
+                                                                                                          <xs:element minOccurs="0" name="MS">
+                                                                                                            <xs:complexType>
+                                                                                                              <xs:sequence>
+                                                                                                                <xs:element minOccurs="0" name="Obj">
+                                                                                                                  <xs:complexType>
+                                                                                                                    <xs:sequence>
+                                                                                                                      <xs:element minOccurs="0" name="TNRef">
+                                                                                                                        <xs:complexType>
+                                                                                                                          <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                                        </xs:complexType>
+                                                                                                                      </xs:element>
+                                                                                                                      <xs:element minOccurs="0" name="TN">
+                                                                                                                        <xs:complexType>
+                                                                                                                          <xs:sequence>
+                                                                                                                            <xs:element minOccurs="0" maxOccurs="unbounded" name="T" type="xs:string" />
+                                                                                                                          </xs:sequence>
+                                                                                                                          <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                                        </xs:complexType>
+                                                                                                                      </xs:element>
+                                                                                                                      <xs:element minOccurs="0" name="ToString" type="xs:string" />
+                                                                                                                      <xs:element minOccurs="0" name="I32" type="xs:unsignedByte" />
+                                                                                                                    </xs:sequence>
+                                                                                                                    <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                    <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                                                  </xs:complexType>
+                                                                                                                </xs:element>
+                                                                                                              </xs:sequence>
+                                                                                                            </xs:complexType>
+                                                                                                          </xs:element>
+                                                                                                        </xs:sequence>
+                                                                                                        <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                        <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                                      </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element minOccurs="0" maxOccurs="unbounded" name="Nil">
+                                                                                                      <xs:complexType>
+                                                                                                        <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                      </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element minOccurs="0" name="DT">
+                                                                                                      <xs:complexType>
+                                                                                                        <xs:simpleContent>
+                                                                                                          <xs:extension base="xs:dateTime">
+                                                                                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                          </xs:extension>
+                                                                                                        </xs:simpleContent>
+                                                                                                      </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element minOccurs="0" name="U32">
+                                                                                                      <xs:complexType>
+                                                                                                        <xs:simpleContent>
+                                                                                                          <xs:extension base="xs:unsignedInt">
+                                                                                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                          </xs:extension>
+                                                                                                        </xs:simpleContent>
+                                                                                                      </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                    <xs:element minOccurs="0" name="B">
+                                                                                                      <xs:complexType>
+                                                                                                        <xs:simpleContent>
+                                                                                                          <xs:extension base="xs:boolean">
+                                                                                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                          </xs:extension>
+                                                                                                        </xs:simpleContent>
+                                                                                                      </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                  </xs:choice>
+                                                                                                </xs:sequence>
+                                                                                              </xs:complexType>
+                                                                                            </xs:element>
+                                                                                          </xs:sequence>
+                                                                                          <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                                        </xs:complexType>
+                                                                                      </xs:element>
+                                                                                    </xs:sequence>
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                              </xs:sequence>
+                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                              <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                        </xs:sequence>
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                  </xs:sequence>
+                                                                  <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                  <xs:attribute name="RefId" type="xs:unsignedShort" use="optional" />
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                              <xs:element minOccurs="0" name="I32">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:unsignedByte">
+                                                                      <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                              <xs:element minOccurs="0" name="DT">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:dateTime">
+                                                                      <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:choice>
+                                                          </xs:sequence>
+                                                        </xs:complexType>
+                                                      </xs:element>
+                                                    </xs:sequence>
+                                                    <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                  </xs:complexType>
+                                                </xs:element>
+                                              </xs:sequence>
+                                            </xs:complexType>
+                                          </xs:element>
+                                        </xs:sequence>
+                                        <xs:attribute name="N" type="xs:string" use="optional" />
+                                        <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                      </xs:complexType>
+                                    </xs:element>
+                                  </xs:choice>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="TN">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="T" type="xs:string" />
+                                </xs:sequence>
+                                <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="LST">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="S" type="xs:string" />
+                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                    <xs:complexType>
+                                      <xs:sequence>
+                                        <xs:element minOccurs="0" name="TNRef">
+                                          <xs:complexType>
+                                            <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                          </xs:complexType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" name="MS">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:choice maxOccurs="unbounded">
+                                                <xs:element minOccurs="0" name="I32">
+                                                  <xs:complexType>
+                                                    <xs:simpleContent>
+                                                      <xs:extension base="xs:unsignedShort">
+                                                        <xs:attribute name="N" type="xs:string" use="optional" />
+                                                      </xs:extension>
+                                                    </xs:simpleContent>
+                                                  </xs:complexType>
+                                                </xs:element>
+                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                  <xs:complexType>
+                                                    <xs:simpleContent>
+                                                      <xs:extension base="xs:string">
+                                                        <xs:attribute name="N" type="xs:string" use="optional" />
+                                                      </xs:extension>
+                                                    </xs:simpleContent>
+                                                  </xs:complexType>
+                                                </xs:element>
+                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="Nil">
+                                                  <xs:complexType>
+                                                    <xs:attribute name="N" type="xs:string" use="optional" />
+                                                  </xs:complexType>
+                                                </xs:element>
+                                                <xs:element minOccurs="0" maxOccurs="unbounded" name="B">
+                                                  <xs:complexType>
+                                                    <xs:simpleContent>
+                                                      <xs:extension base="xs:boolean">
+                                                        <xs:attribute name="N" type="xs:string" use="optional" />
+                                                      </xs:extension>
+                                                    </xs:simpleContent>
+                                                  </xs:complexType>
+                                                </xs:element>
+                                                <xs:element minOccurs="0" name="DT">
+                                                  <xs:complexType>
+                                                    <xs:simpleContent>
+                                                      <xs:extension base="xs:dateTime">
+                                                        <xs:attribute name="N" type="xs:string" use="optional" />
+                                                      </xs:extension>
+                                                    </xs:simpleContent>
+                                                  </xs:complexType>
+                                                </xs:element>
+                                                <xs:element minOccurs="0" name="G">
+                                                  <xs:complexType>
+                                                    <xs:simpleContent>
+                                                      <xs:extension base="xs:string">
+                                                        <xs:attribute name="N" type="xs:string" use="optional" />
+                                                      </xs:extension>
+                                                    </xs:simpleContent>
+                                                  </xs:complexType>
+                                                </xs:element>
+                                                <xs:element minOccurs="0" name="Obj">
+                                                  <xs:complexType>
+                                                    <xs:sequence>
+                                                      <xs:element minOccurs="0" name="TNRef">
+                                                        <xs:complexType>
+                                                          <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                        </xs:complexType>
+                                                      </xs:element>
+                                                      <xs:element minOccurs="0" name="LST">
+                                                        <xs:complexType>
+                                                          <xs:sequence>
+                                                            <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                                              <xs:complexType>
+                                                                <xs:sequence>
+                                                                  <xs:element minOccurs="0" name="TNRef">
+                                                                    <xs:complexType>
+                                                                      <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                    </xs:complexType>
+                                                                  </xs:element>
+                                                                  <xs:element minOccurs="0" name="MS">
+                                                                    <xs:complexType>
+                                                                      <xs:sequence>
+                                                                        <xs:choice maxOccurs="unbounded">
+                                                                          <xs:element minOccurs="0" name="B">
+                                                                            <xs:complexType>
+                                                                              <xs:simpleContent>
+                                                                                <xs:extension base="xs:boolean">
+                                                                                  <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                </xs:extension>
+                                                                              </xs:simpleContent>
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                                                            <xs:complexType>
+                                                                              <xs:sequence>
+                                                                                <xs:element minOccurs="0" name="TNRef">
+                                                                                  <xs:complexType>
+                                                                                    <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                                <xs:element minOccurs="0" name="LST">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="Obj">
+                                                                                        <xs:complexType>
+                                                                                          <xs:sequence>
+                                                                                            <xs:element minOccurs="0" name="TNRef">
+                                                                                              <xs:complexType>
+                                                                                                <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                              </xs:complexType>
+                                                                                            </xs:element>
+                                                                                            <xs:element minOccurs="0" name="MS">
+                                                                                              <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                  <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                                                                    <xs:complexType>
+                                                                                                      <xs:simpleContent>
+                                                                                                        <xs:extension base="xs:string">
+                                                                                                          <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                        </xs:extension>
+                                                                                                      </xs:simpleContent>
+                                                                                                    </xs:complexType>
+                                                                                                  </xs:element>
+                                                                                                  <xs:element minOccurs="0" name="Obj">
+                                                                                                    <xs:complexType>
+                                                                                                      <xs:sequence>
+                                                                                                        <xs:element minOccurs="0" name="TNRef">
+                                                                                                          <xs:complexType>
+                                                                                                            <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                          </xs:complexType>
+                                                                                                        </xs:element>
+                                                                                                        <xs:element minOccurs="0" name="DCT">
+                                                                                                          <xs:complexType>
+                                                                                                            <xs:sequence>
+                                                                                                              <xs:element minOccurs="0" maxOccurs="unbounded" name="En">
+                                                                                                                <xs:complexType>
+                                                                                                                  <xs:sequence>
+                                                                                                                    <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                                                                                      <xs:complexType>
+                                                                                                                        <xs:simpleContent>
+                                                                                                                          <xs:extension base="xs:string">
+                                                                                                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                          </xs:extension>
+                                                                                                                        </xs:simpleContent>
+                                                                                                                      </xs:complexType>
+                                                                                                                    </xs:element>
+                                                                                                                    <xs:element minOccurs="0" name="B">
+                                                                                                                      <xs:complexType>
+                                                                                                                        <xs:simpleContent>
+                                                                                                                          <xs:extension base="xs:boolean">
+                                                                                                                            <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                                          </xs:extension>
+                                                                                                                        </xs:simpleContent>
+                                                                                                                      </xs:complexType>
+                                                                                                                    </xs:element>
+                                                                                                                  </xs:sequence>
+                                                                                                                </xs:complexType>
+                                                                                                              </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                          </xs:complexType>
+                                                                                                        </xs:element>
+                                                                                                      </xs:sequence>
+                                                                                                      <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                      <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                                    </xs:complexType>
+                                                                                                  </xs:element>
+                                                                                                </xs:sequence>
+                                                                                              </xs:complexType>
+                                                                                            </xs:element>
+                                                                                          </xs:sequence>
+                                                                                          <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                        </xs:complexType>
+                                                                                      </xs:element>
+                                                                                    </xs:sequence>
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                                <xs:element minOccurs="0" name="TN">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="T" type="xs:string" />
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                                <xs:element minOccurs="0" name="DCT">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence minOccurs="0">
+                                                                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="En">
+                                                                                        <xs:complexType>
+                                                                                          <xs:sequence>
+                                                                                            <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                                                              <xs:complexType>
+                                                                                                <xs:simpleContent>
+                                                                                                  <xs:extension base="xs:string">
+                                                                                                    <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                  </xs:extension>
+                                                                                                </xs:simpleContent>
+                                                                                              </xs:complexType>
+                                                                                            </xs:element>
+                                                                                            <xs:element minOccurs="0" name="I32">
+                                                                                              <xs:complexType>
+                                                                                                <xs:simpleContent>
+                                                                                                  <xs:extension base="xs:unsignedShort">
+                                                                                                    <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                  </xs:extension>
+                                                                                                </xs:simpleContent>
+                                                                                              </xs:complexType>
+                                                                                            </xs:element>
+                                                                                            <xs:element minOccurs="0" name="B">
+                                                                                              <xs:complexType>
+                                                                                                <xs:simpleContent>
+                                                                                                  <xs:extension base="xs:boolean">
+                                                                                                    <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                                  </xs:extension>
+                                                                                                </xs:simpleContent>
+                                                                                              </xs:complexType>
+                                                                                            </xs:element>
+                                                                                          </xs:sequence>
+                                                                                        </xs:complexType>
+                                                                                      </xs:element>
+                                                                                    </xs:sequence>
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                              </xs:sequence>
+                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                              <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                          <xs:element minOccurs="0" maxOccurs="unbounded" name="S">
+                                                                            <xs:complexType>
+                                                                              <xs:simpleContent>
+                                                                                <xs:extension base="xs:string">
+                                                                                  <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                                </xs:extension>
+                                                                              </xs:simpleContent>
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                          <xs:element minOccurs="0" name="Ref">
+                                                                            <xs:complexType>
+                                                                              <xs:attribute name="N" type="xs:string" use="optional" />
+                                                                              <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                        </xs:choice>
+                                                                      </xs:sequence>
+                                                                    </xs:complexType>
+                                                                  </xs:element>
+                                                                </xs:sequence>
+                                                                <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                              </xs:complexType>
+                                                            </xs:element>
+                                                          </xs:sequence>
+                                                        </xs:complexType>
+                                                      </xs:element>
+                                                    </xs:sequence>
+                                                    <xs:attribute name="N" type="xs:string" use="optional" />
+                                                    <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                                  </xs:complexType>
+                                                </xs:element>
+                                              </xs:choice>
+                                            </xs:sequence>
+                                          </xs:complexType>
+                                        </xs:element>
+                                      </xs:sequence>
+                                      <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                                    </xs:complexType>
+                                  </xs:element>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                          <xs:attribute name="N" type="xs:string" use="optional" />
+                          <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element minOccurs="0" name="Version">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                              <xs:attribute name="N" type="xs:string" use="optional" />
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element minOccurs="0" maxOccurs="unbounded" name="I32">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:unsignedByte">
+                              <xs:attribute name="N" type="xs:string" use="optional" />
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element minOccurs="0" maxOccurs="unbounded" name="DT">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:dateTime">
+                              <xs:attribute name="N" type="xs:string" use="optional" />
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:choice>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="RefId" type="xs:unsignedByte" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
